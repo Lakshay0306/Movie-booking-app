@@ -1,7 +1,7 @@
 // src/services/socket.js
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = (typeof window !== 'undefined' ? window.location.origin : (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000')).replace('/api', '');
+const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || (typeof window !== 'undefined' ? window.location.origin : (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000')).replace('/api', '');
 
 export const createSeatsSocket = () => {
   let token = null;
