@@ -1,0 +1,85 @@
+# ========================
+# Dependencies
+# ========================
+node_modules/
+.pnp
+.pnp.js
+
+# ========================
+# Next.js Build Output
+# ========================
+.next/
+out/
+
+# ========================
+# Production Build
+# ========================
+build/
+dist/
+
+# ========================
+# Environment Variables (SECRETS!)
+# ========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+
+# ========================
+# Logs
+# ========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ========================
+# OS Generated Files
+# ========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ========================
+# IDE / Editor Config
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# Uploads (user-generated content)
+# ========================
+uploads/*
+!uploads/.gitkeep
+
+# ========================
+# Testing
+# ========================
+coverage/
+.nyc_output/
+
+# ========================
+# Docker (optional local volumes)
+# ========================
+docker-data/
+
+# ========================
+# Miscellaneous
+# ========================
+*.tsbuildinfo
+next-env.d.ts
+.vercel
